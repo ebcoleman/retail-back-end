@@ -10,6 +10,22 @@ class Product extends Model {}
 Product.init(
   {
     // define columns
+    id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true
+    },
+    product_name: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    price: {
+      // can have a total of 10 digits with 2 digits after the decimal, works for cents. 
+      type: DataTypes.DECIMAL(10,2), 
+      allowNull: false,
+
+    }
   },
   {
     sequelize,
