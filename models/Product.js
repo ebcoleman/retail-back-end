@@ -24,7 +24,24 @@ Product.init(
       // can have a total of 10 digits with 2 digits after the decimal, works for cents. 
       type: DataTypes.DECIMAL(10,2), 
       allowNull: false,
-
+    }, 
+    stock: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      defaultValue: 10,
+      // validates that the value is numeric
+      validate: {
+        isNumeric: true
+      }
+    },
+    category_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      // references the category model and the id number for that category
+      references: {
+        model: 'Category',
+        key: 'id'
+      }
     }
   },
   {
