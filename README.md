@@ -170,7 +170,7 @@ Your database should contain the following four models, including the requiremen
     * References the `Tag` model's `id`.
 
 ### Associations
-<!-- models folder, index.js file  -->
+<!-- models folder, index.js file COMPLETED 2/25 -->
 You'll need to execute association methods on your Sequelize models to create the following relationships between them:
 
 * `Product` belongs to `Category`, and `Category` has many `Product` models, as a category can have multiple products but a product can only belong to one category.
