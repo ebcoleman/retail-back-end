@@ -4,6 +4,8 @@
 
 Starter code:
 https://github.com/coding-boot-camp/fantastic-umbrella
+https://sequelize.org/docs/v6/core-concepts/assocs/
+
 
 # 13 Object-Relational Mapping (ORM): E-Commerce Back End
 
@@ -168,7 +170,7 @@ Your database should contain the following four models, including the requiremen
     * References the `Tag` model's `id`.
 
 ### Associations
-
+<!-- models folder, index.js file  -->
 You'll need to execute association methods on your Sequelize models to create the following relationships between them:
 
 * `Product` belongs to `Category`, and `Category` has many `Product` models, as a category can have multiple products but a product can only belong to one category.
