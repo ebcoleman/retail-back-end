@@ -180,7 +180,7 @@ You'll need to execute association methods on your Sequelize models to create th
 > **Hint:** Make sure you set up foreign key relationships that match the column we created in the respective models.
 
 ### Fill Out the API Routes to Perform RESTful CRUD Operations
-
+<!-- finished 3-5 -->
 Fill out the unfinished routes in `product-routes.js`, `tag-routes.js`, and `category-routes.js` to perform create, read, update, and delete operations using your Sequelize models.
 
 Note that the functionality for creating the many-to-many relationship for products has already been completed for you.
@@ -198,7 +198,7 @@ Create the code needed in `server.js` to sync the Sequelize models to the MySQL 
 ## Grading Requirements
 
 > **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
+
 > * A repository that has no code
 >
 > * A repository that includes a unique name but nothing else
